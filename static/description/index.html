@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy Cell/Column Value</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #007bff; /* Odoo Blue */
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        h1 {
+            text-align: center;
+            color: #555;
+            border-bottom: none;
+            margin-bottom: 30px;
+        }
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        .img-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        img {
+            width: 100%; /* Reduced image width */
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            display: block; /* Make image a block element */
+            margin-left: auto; /* Center horizontally */
+            margin-right: auto; /* Center horizontally */
+            margin-bottom: 10px; /* Add space below image */
+        }
+        .img-caption {
+            font-size: 0.9em;
+            color: #777;
+            margin-top: -5px; /* Reduce space between image and caption */
+            margin-bottom: 20px; /* Add space below caption */
+        }
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fdfdfd;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+        .section-title {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        .feature-list li {
+            margin-bottom: 10px;
+        }
+         .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+        .alert-info {
+            color: #31708f;
+            background-color: #d9edf7;
+            border-color: #bce8f1;
+        }
+         .alert-success {
+            color: #3c763d;
+            background-color: #dff0d8;
+            border-color: #d6e9c6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fa fa-copy"></i> Copy Cell/Column Value Module</h1>
+
+        <div class="section">
+            <h2 class="section-title">Description</h2>
+            <p>
+                This module allows users to easily copy the value of a cell or an entire column in Odoo's list view with just one click.
+                This feature is extremely useful when you need to quickly grab data from a specific cell or copy the entire data of a column for use elsewhere, such as pasting into Excel or other applications.
+            </p>
+            <div class="alert alert-info">
+                <strong>Save time:</strong> No need to manually select individual values or export unnecessary data.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Installation and Activation Guide</h2>
+            <p>To use the module, you need to install and activate it in Odoo:</p>
+            <ol>
+                <li>Go to the <strong>Apps</strong> menu.</li>
+                 <div class="img-container">
+                    <img src="images/locate_app_menu.png" style="width: 100%" alt="Locate Apps menu">
+                    <p class="img-caption">Step 1: Locate the Apps menu</p>
+                </div>
+                <li>Search for the module "<strong>Copy Cell/Column Value</strong>" or its technical name (if available).</li>
+                <li>Click the <strong>Install</strong> or <strong>Activate</strong> button.</li>
+                 <div class="img-container">
+                    <img src="images/search_and_active_app_sceenshot.png" style="width: 100%" alt="Search and activate module">
+                     <p class="img-caption">Step 2 & 3: Search and activate the module</p>
+                </div>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Features and Results</h2>
+             <div class="alert alert-success">
+                <strong>Improved User Experience:</strong> Quick and intuitive copy operations.
+            </div>
+
+            <h3>1. Copy Icon Appears on Hover</h3>
+            <p>When you hover over a cell in the list view, a small clipboard icon appears, indicating that you can copy the cell's value.</p>
+            <div class="img-container">
+                <img src="images/clipboard_icon_hover_screenshot.gif" style="width: 100%" alt="Copy icon on hover">
+                <p class="img-caption">Copy icon appears when hovering over a cell</p>
+            </div>
+
+            <h3>2. Copy Cell Value</h3>
+            <p>Click the clipboard icon to copy the value of that cell to the clipboard.</p>
+            <div class="img-container">
+                <img src="images/copy_cell_value_screenshot.gif" style="width: 100%" alt="Copy a cell value">
+                 <p class="img-caption">Click to copy the cell value</p>
+            </div>
+
+            <h3>3. Copy Entire Column</h3>
+             <p>Click the column header to copy all values in that column (for the records currently displayed on the page).</p>
+            <div class="img-container">
+                <img src="images/copy_column_screenshot.gif" style="width: 100%" alt="Copy column values">
+                <p class="img-caption">Click the header to copy the entire column</p>
+            </div>
+
+            <h3>4. Main Functionality</h3>
+             <p>See how the module works in action.</p>
+            <div class="img-container">
+                <img src="images/main_screenshot.gif" style="width: 100%" alt="Main module functionality">
+                 <p class="img-caption">Demonstration of the main functionality</p>
+            </div>
+
+            <h3>5. Works Well with Excel</h3>
+            <p>Data copied from a column can be easily pasted into Excel or other spreadsheet applications, maintaining the row format.</p>
+            <div class="img-container">
+                <img src="images/work_well_excel_screenshot.gif" style="width: 100%" alt="Paste data into Excel">
+                <p class="img-caption">Copied data works well when pasted into Excel</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
