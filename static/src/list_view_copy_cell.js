@@ -126,7 +126,7 @@ patch(ListRenderer.prototype, {
         const table = this.tableRef.el;
         let headerRow;
        if (this.context?.multiheader)
-            headerRow = table.querySelector("thead tr:nth-child(2)"); // Hàng header thứ 2 (chứa indexFreeze)
+            headerRow = table.querySelector("thead tr:last-child"); // Hàng header thứ 2 (chứa indexFreeze)
         else
             headerRow = table.querySelector("thead tr:first-child");
         const rows = table.querySelectorAll("tbody tr");
