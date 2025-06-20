@@ -1,0 +1,21 @@
+.o_copy_header_button {
+    border: none;
+    background: transparent;
+    opacity: 0.6;
+    cursor: pointer;
+    display: none;
+    z-index: 1;
+    position: absolute;
+    right: 5px;
+    top: 2px;
+}
+
+/* Thay đổi cách hiển thị - sử dụng opacity thay vì display */
+
+th .o_copy_header_button.show {
+    display: inline-block !important; 
+}
+
+th:hover .o_copy_header_button {
+    display: inline-block !important;
+}

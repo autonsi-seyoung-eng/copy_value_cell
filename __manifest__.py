@@ -13,7 +13,7 @@ Clicking the icon copies the cell's text content to the user's clipboard.
     'depends': ['web'],
     'assets': {
         'web.assets_backend': [
-            'copy_value_cell/static/src/js/list_view_copy_cell.js',
+            'copy_value_cell/static/src/**/*',
         ],
     },
     'images': ['static/description/banner.gif'],
